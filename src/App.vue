@@ -10,6 +10,12 @@
 </template>
 
 <script>
+export default {
+  name: 'app',
+  created () {
+    this.$store.dispatch('init')
+  }
+}
 </script>
 
 <style src="spectre.css/dist/spectre.min.css"></style>
